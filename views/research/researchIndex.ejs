@@ -1,0 +1,196 @@
+<%- include('../includes/head.ejs') %>
+<style>
+    .datasets-row:hover {
+        background-color: rgb(233, 238, 229);
+
+    }
+</style>
+</head>
+
+<body style="font-family: ubuntu;">
+    <%- include('../includes/navigation.ejs') %>
+
+
+    <div style="position: relative; margin: 0 auto;">
+        <img src="images/XOSS3.jpg">
+        <div style="position:absolute; top:25px;">
+            <div class="row">
+                <div style="padding-left: 96px;">
+                    <h1 style="color: white;">Datasets</h1>
+                </div>
+                <div class="mt-3" style="padding-left: 700px;">
+                    <a href="#" class="btn btn-sm btn-success">
+                        Documentation
+                    </a>
+                    <span>
+                        <a href="#" class="btn btn-sm btn-primary">
+                            New Dataset
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- relative, absoute dataset Documentation ses -->
+
+    <div class="container">
+        <div class="input-group">
+            <div class="input-group-append">
+                <button class="input-group-prepend input-group-text fa fa-search"></button>
+            </div>
+
+            <input type="search" class="form-control bg-light">
+            <div class="input-group-append">
+                <a href="#" style="text-decoration: none;font-family: ubuntu;" class="input-group-prepend input-group-text">
+                    <i class="fa fa-ravelry"> F</i>eedback 
+                </a>
+            </div>
+            <div class="input-group-append">
+                <a href="#" class="input-group-prepend input-group-text btn btn-sm btn-outline-secondary">
+                   <i class=" fa fa-filter"> F</i>ilter
+                </a>
+            </div>
+
+        </div>
+        <br>
+        <div class="border">
+            <div class="row mt-2 mb-1">
+                <div class="col-md-1">
+                    <div class="dropdown mb-1 ml-1">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Privacy
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a href="#" class="dropdown-item">Public</a>
+                            <a href="#" class="dropdown-item">Private</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                </div>
+                <div class="col-md-2">
+                    <div class="row">
+                        <div class="dropdown mb-1">
+                            <h7 style="color: gray; padding-right: 10px; padding-bottom:3px; ">Sort By </h7>
+
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Filtered
+                            </button>
+
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="#" class="dropdown-item">Highest Ratings</a>
+                                <a href="#" class="dropdown-item">Lowest Ratings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- real part -->
+        <div style="cursor: pointer;" onclick="window.location='/researchIndiData'"
+            class="border-left border-right border-bottom datasets-row">
+
+            <div class="row">
+                <div class="col-md-2 ml-4" style="padding-top:10px; padding-bottom: 10px; padding-left:37px;">
+                    <img src="images/dataset-cover.png" style="width: 100px; height:100px;border-radius:50%;"
+                        class="img-thumbnail">
+                </div>
+                <div class="col-md-6" style="padding-top:10px; padding-bottom: 10px;">
+                    <h5 class="ml-1 mt-2">Deep NLP-Learning</h5>
+                    <a href="#" class="ml-1">eeshadeeplearning</a>
+                    <div class="row ml-1" style="color: gray;">
+                        <a>2 years</a>
+                        <a style="padding-left:25px;">243 KB</a>
+                        <a style="padding-left:25px;">8.2</a>
+                        <a style="padding-left:25px;">2 files(CSV)</a>
+                    </div>
+                </div>
+                <div class="col-md-3" style="padding-top:10px; padding-bottom: 10px; padding-left:50px;">
+                    <div class="row">
+                        <a href="#" style="visibility: hidden;"
+                            class="mt-2 btn btn-sm btn-outline-secondary datasets-row">
+                            Quick Look
+                        </a>
+                        <div style="padding-left:40px;" class="mt-2">
+                            <div class="input-group">
+                                <div class="input-group-append" style="width: 15px; height:26px;">
+                                    <a href="#" style="text-decoration: none;"
+                                        class="input-group-prepend input-group-text">
+                                        <i class="fa fa-thumbs-up"> </i>
+                                        
+                                    </a>
+                                </div>
+
+                                <div class="input-group-append" style="width: 15px; height:26px; padding-left:25px;">
+                                    <a class="input-group-prepend input-group-text">
+                                        124
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- real part ses -->
+
+        <!-- extended part suru -->
+        <div style="cursor: pointer;" onclick="window.location='/researchIndiData'"
+        class="border-left border-right border-bottom datasets-row">
+
+        <div class="row">
+            <div class="col-md-2 ml-4" style="padding-top:10px; padding-bottom: 10px; padding-left:37px;">
+                <img src="images/Masum.png" style="width: 100px; height:100px;border-radius:50%;"
+                    class="img-thumbnail">
+            </div>
+            <div class="col-md-6" style="padding-top:10px; padding-bottom: 10px;">
+                <h5 class="ml-1 mt-2">Python Learning</h5>
+                <a href="#" class="ml-1">eeshadeeplearning</a>
+                <div class="row ml-1" style="color: gray;">
+                    <a>2 years</a>
+                    <a style="padding-left:25px;">243 KB</a>
+                    <a style="padding-left:25px;">8.2</a>
+                    <a style="padding-left:25px;">2 files(CSV)</a>
+                </div>
+            </div>
+
+            <div class="col-md-3" style="padding-top:10px; padding-bottom: 10px; padding-left:50px;">
+                <div class="row">
+                    <a href="#" style="visibility: hidden;"
+                        class="mt-2 btn btn-sm btn-outline-secondary datasets-row">
+                        Quick Look
+                    </a>
+                    <div style="padding-left:40px;" class="mt-2">
+                        <div class="input-group">
+                            <div class="input-group-append" style="width: 15px; height:26px;">
+                                <a href="#" style="text-decoration: none;"
+                                    class="input-group-prepend input-group-text">
+                                    <i class="fa fa-thumbs-up"> </i>
+                                </a>
+                            </div>
+
+                            <div class="input-group-append" style="width: 15px; height:26px; padding-left:25px;">
+                                <a class="input-group-prepend input-group-text">
+                                    1000
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- extended part ses -->
+        <br>
+
+        
+    </div>
+    <%- include('../includes/end.ejs') %>

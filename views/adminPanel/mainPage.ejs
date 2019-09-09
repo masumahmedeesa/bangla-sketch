@@ -1,0 +1,51 @@
+<%- include('../includes/head.ejs') %>
+<style>
+.personal-link:hover{
+    text-decoration: none;
+    color: rgb(56, 204, 51);   
+    background: #0B3861;
+}
+.adminIndex{
+    background: rgba(238, 240, 231, 0.815);
+    height: 35px;
+    padding: 5px;
+    text-align: end;
+}
+.adminIndex:hover{
+    background: #0B3861;
+    color: white;
+    height: 35px;
+    padding: 5px;
+    text-align: end;
+}
+</style>
+</head>
+
+<body style="font-family: ubuntu;">
+    <%- include('../includes/navigation.ejs') %>
+    
+    <div class="container mt-5 mb-5">
+        <code style="background:black; color: white;">
+            <h1><kbd class="mt-2">Admin Panel</kbd></h1> 
+        </code>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                    <%- include('adminNavigation.ejs') %>
+                <br>
+            </div>
+
+            <div class="col-md-9">
+                <div class="container">
+                    <div class="ml-3">
+                            <div style="background: #0B3861; color: whitesmoke;">
+                                    <h3 class="ml-3" >ADMIN DASHBOARD | banglaSketch</h3>
+                            </div>
+                            <img src="images/hacking.png" class="img-thumbnail"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('../includes/end.ejs') %>

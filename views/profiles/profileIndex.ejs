@@ -1,0 +1,250 @@
+<%- include('../includes/head.ejs') %>
+<style>
+    .hovereffect {
+        width: 100%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        text-align: center;
+        cursor: default;
+    }
+
+    .hovereffect .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
+
+    .hovereffect img {
+        display: block;
+        position: relative;
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+
+    }
+
+    .hovereffect:hover img {
+        filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+        filter: grayscale(1) blur(1px);
+        -webkit-filter: grayscale(1) blur(1px);
+        -webkit-transform: scale(1.0);
+        -ms-transform: scale(1.0);
+        transform: scale(1.0);
+
+    }
+
+
+    .hovereffect a.info {
+        display: inline-block;
+        text-decoration: none;
+        padding: 7px 14px;
+        border: 1px solid #fff;
+        margin: 50px 0 0 0;
+        color: #fff;
+        background-color: transparent;
+    }
+
+    .hovereffect a.info:hover {
+        box-shadow: 0 0 3px #000;
+    }
+
+    .hovereffect a.info,
+    .hovereffect h2 {
+        -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        transform: scale(0.7);
+        -webkit-transition: all 0.4s ease-in;
+        transition: all 0.4s ease-in;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .hovereffect:hover a.info,
+    .hovereffect:hover h2 {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+</style>
+</head>
+
+<body style="font-family: ubuntu;">
+    <%- include('../includes/navigation.ejs') %>
+
+    <div class="container">
+        <h3 class="mt-3" style="color: royalblue;">| Professor</h3>
+        <br>
+
+        <!-- first row -->
+
+        <div class="row" id="collapseHocce">
+            <div class="col-md-3">
+                <div style="text-align: center;" class="ml-4">
+                    <div class="hovereffect">
+                        <img src="/images/mzi.jpg" class="img-thumbnail" style="width: 260px; height: 250px; 
+                                                border-radius: 50%;" alt="No image founded">
+                        <div class="overlay mt-5">
+                            <a class="info" data-toggle="collapse" href="#collapseExample1" role="button"
+                                aria-expanded="true" aria-controls="collapseExample1"
+                                style="color: rgb(32, 23, 161);">Details</a>
+                        </div>
+                    </div>
+                    <p class="mt-2">
+                        Dr Muhammed Zafar Iqbal <br> Professor
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div style="text-align: center;" class="ml-4">
+                    <div class="hovereffect">
+                        <img src="/images/default.jpg" class="img-thumbnail" style="width: 260px; height: 250px; 
+                                                    border-radius: 50%;" alt="No image founded">
+                        <div class="overlay mt-5">
+                            <a class="info" data-toggle="collapse" href="#collapseExample2" role="button"
+                                aria-expanded="true" aria-controls="collapseExample2"
+                                style="color: rgb(32, 23, 161);">Details</a>
+                        </div>
+                    </div>
+                    <p class="mt-2">
+                        Mohammad Abdullah Al Mumin <br> Professor
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+            </div>
+
+            <div class="col-md-3">
+            </div>
+
+
+            <div class="collapse multi-collpase mb-4" id="collapseExample1" data-parent="#collapseHocce">
+                <div class="card border-success">
+                    <div class="card-header" style="width:1130px; height: 55px;">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                Dr Muhammed Zafar Iqbal | Professor
+                            </div>
+                            <div class="col-sm-1">
+
+                                <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                    data-target="#collapseExample1" aria-expanded="true"
+                                    aria-controls="collapseExample1"><i class="fa fa-arrow-circle-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="width:1130px; height: 100px;">
+                        Contact Information:
+                        Office Address: Room no: 324, Department of CSE, Dr. M. A. 
+                        Wazed Miah IICT Building, Shahjalal University of Science and Technology, Sylhet-3114
+                        <br><a href="/profileIndividual"> more..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse multi-collpase mb-4" id="collapseExample2" data-parent="#collapseHocce">
+                <div class="card border-success">
+                    <div class="card-header" style="width:1130px; height: 55px;">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                Mohammad Abdullah Al Mumin | Professor
+                            </div>
+                            <div class="col-sm-1">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                    data-target="#collapseExample2" aria-expanded="true"
+                                    aria-controls="collapseExample2"><i class="fa fa-arrow-circle-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="width:1130px; height: 100px;">
+                        Contact Information:
+                        Phone: 88-01711445110
+                        Email: mumin-cse@sust.edu
+                        <br>
+                        <a href="/profileIndividual"> more..</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="collapse multi-collpase mb-4" id="collapseExample3" data-parent="#collapseHocce">
+                <div class="card card-body border-success">
+                    3 | All the data will be put in here with further information. zdfgrwgerw rter rgtery eye ye yertyrt
+                    eyerty rtyrtur rtyutyu rtyrur dfgetgdtge ertety etyet yetyerty rtyrt yterye
+                    <a href="/profileIndividual"> more..</a>
+                </div>
+            </div> -->
+
+        </div>
+
+        <!-- first row ses -->
+
+        <!-- second row suru -->
+
+        <h3 class="mt-3" style="color: royalblue;">| Associate Professor</h3>
+        <br>
+        <div class="row" id="collapseHocce">
+            <div class="col-md-3">
+                <div style="text-align: center;" class="ml-4">
+                    <div class="hovereffect">
+                        <img src="/images/forida.jpg" class="img-thumbnail" style="width: 260px; height: 250px; 
+                                                border-radius: 50%;" alt="No image founded">
+                        <div class="overlay mt-5">
+                            <a class="info" data-toggle="collapse" href="#collapseExampleForida" role="button"
+                                aria-expanded="true" aria-controls="collapseExampleForida"
+                                style="color: rgb(32, 23, 161);">Details</a>
+                        </div>
+                    </div>
+                    <p class="mt-2">
+                        Dr. Farida Chowdhury <br> Associate Professor
+                    </p>
+                </div>
+            </div>
+
+            <div class="collapse multi-collpase mb-4" id="collapseExampleForida" data-parent="#collapseHocce">
+                <div class="card border-success">
+                    <div class="card-header" style="width:1130px; height: 55px;">
+                        <div class="row">
+                            <div class="col-sm-11">
+                                Dr. Farida Chowdhury  | Associate Professor
+                            </div>
+                            <div class="col-sm-1">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                    data-target="#collapseExampleForida" aria-expanded="true"
+                                    aria-controls="collapseExampleForida"><i class="fa fa-arrow-circle-up"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body" style="width:1130px; height: 100px;">
+                        Contact Information:
+                        Email: deeba.bd@gmail.com
+                        Education:
+                        PhD in Structured Peer-to-Peer Overlays for NATed Churn Intensive 
+                        Networks at University of Stirling, Stirling, Scotland, UK.
+                        <br>
+                        <a href="/profileIndividual"> more..</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+
+            </div>
+        </div>
+
+        <br>
+    </div>
+
+
+    <%- include('../includes/end.ejs') %>
