@@ -1,57 +1,51 @@
 <%- include('../includes/head.ejs') %>
+<style>
+    /* * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    } */
+    /* 
+    .item {
+        position: absolute;
+    } */
+
+    #itemContainer {
+        background: url('images/XOSS3.jpg');
+        height: 100%;
+        position: relative;
+        padding: 1.5%;
+    }
+</style>
 
 </head>
 
-<body>
+<body style="font-family: ubuntu;">
     <%- include('../includes/navigation.ejs') %>
 
-    <div class="position-relative">
 
-        <!-- <div class="d-flex"> -->
-        <img src="images/XOSS3.jpg" class="w-100">
-        <!-- </div> -->
+    <div id="itemContainer">
+        <div class="row">
 
-        <div class="d-flex justify-content-between position-absolute" style="top:10%;">
+            <div class="col-8">
+                <div class="ml-5">
+                    <h1 style="color: white;">Datasets</h1>
+                </div>
+            </div>
 
-
-        </div>
-    </div>
-    <br>
-
-
-    <div class="d-flex w-100">
-        <div class="col-8">
-            <div class="ml-5 justify-content-start">
-                <h1>Datasets</h1>
+            <div class="col-4">
+                <div class="d-inline-block float-right">
+                    <a href="#" class="mt-3 btn btn-sm btn-primary">
+                        Documentation
+                    </a>
+                    <a href="#" class="mt-3 btn btn-sm btn-success">
+                        New Dataset
+                    </a>
+                </div>
             </div>
 
         </div>
-
-        <div class="col-2">
-            <a href="#" class="mt-2 btn btn-sm btn-primary">
-                Documentation
-            </a>
-        </div>
-
-        <div class="col-2">
-            <a href="#" class="d-block mt-2 btn btn-sm btn-success">
-                New Dataset
-            </a>
-        </div>
-
-        <!-- <div class="mt-2 justify-content-between">
-            <a href="#" class="btn btn-sm btn-success">
-                Documentation
-            </a>
-            <a href="#" class="ml-1 btn btn-sm btn-primary">
-                New Dataset
-            </a>
-        </div> -->
-
     </div>
-
-    </div>
-
 
     <!-- <div class="container">
             <div class="row justify-content-center mt-3">
