@@ -31,13 +31,14 @@
         <code style="background:black; color: white;">
             <h1><kbd class="mt-2">Admin Panel</kbd></h1>
         </code>
-        <hr>
-        <div class="row">
-            <div class="col-md-3">
+        <br>
+
+        <div class="shadow d-flex card">
+            <div class="d-flex card-header">
                 <%- include('adminNavigation.ejs') %>
             </div>
 
-            <div class="col-md-9">
+            <div class="shadow d-flex mt-4 card-body">
                 <div class="container">
                     <div class="ml-3">
                         <div style="background: #0B3861; color: whitesmoke;">
@@ -105,7 +106,7 @@
                                 </label>
                                 <div class="col-sm-10">
                                     <textarea class="col-sm-10" id="ckeditorE" name="personEducation"
-                                        class="form-control" placeholder="Education">
+                                        class="form-control" placeholder="Educational Details">
                                     </textarea>
                                 </div>
                             </div>
@@ -128,7 +129,8 @@
                                     <h6> Awards & Recongintion </h6>
                                 </label>
                                 <div class="col-sm-10">
-                                    <textarea class="col-sm-10" id="ckeditorA" name="personAwards" class="form-control">
+                                    <textarea class="col-sm-10" id="ckeditorA" name="personAwards" class="form-control"
+                                        placeholder="Awards & Recongintion">
                                     </textarea>
                                 </div>
                             </div>
@@ -140,7 +142,7 @@
                                 </label>
                                 <div class="col-sm-10">
                                     <textarea class="col-sm-10" id="ckeditorJ" name="personJournals"
-                                        class="form-control">
+                                        class="form-control" placeholder="Journal Publications">
                                     </textarea>
                                 </div>
                             </div>
@@ -152,7 +154,7 @@
                                 </label>
                                 <div class="col-sm-10">
                                     <textarea class="col-sm-10" id="ckeditorCP" name="personConference"
-                                        class="form-control">
+                                        class="form-control" placeholder="Conference Proceedings">
                                     </textarea>
                                 </div>
                             </div>
@@ -164,7 +166,7 @@
                                 </label>
                                 <div class="col-sm-10">
                                     <textarea class="col-sm-10" id="ckeditorT" name="personTeaching"
-                                        class="form-control">
+                                        class="form-control" placeholder="Teaching & Other Stuffs (if have)">
                                     </textarea>
                                 </div>
                             </div>
@@ -176,7 +178,7 @@
                                 </label>
                                 <div class="col-sm-10">
                                     <textarea class="col-sm-10" id="ckeditorGS" name="personSupervision"
-                                        class="form-control">
+                                        class="form-control" placeholder="Graduate Supervision">
                                     </textarea>
                                 </div>
                             </div>
@@ -206,14 +208,83 @@
 
                     </div>
                 </div>
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
         </div>
     </div>
 
     <%- include('../includes/end.ejs') %>
 
-
     <script>
+        ClassicEditor
+            .create(document.querySelector('#ckeditor'))
+            .then(ckeditor => {
+                console.log(ckeditor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#ckeditorE'))
+            .then(ckeditorE => {
+                console.log(ckeditorE);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#ckeditorR'))
+            .then(ckeditorR => {
+                console.log(ckeditorR);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#ckeditorA'))
+            .then(ckeditorA => {
+                console.log(ckeditorA);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#ckeditorJ'))
+            .then(ckeditorJ => {
+                console.log(ckeditorJ);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#ckeditorT'))
+            .then(ckeditorT => {
+                console.log(ckeditorT);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#ckeditorCP'))
+            .then(ckeditorCP => {
+                console.log(ckeditorCP);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#ckeditorGS'))
+            .then(ckeditorGS => {
+                console.log(ckeditorGS);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
+    <!-- <script>
         CKEDITOR.replace('ckeditor');
         CKEDITOR.replace('ckeditorE');
         CKEDITOR.replace('ckeditorR');
@@ -222,4 +293,4 @@
         CKEDITOR.replace('ckeditorT');
         CKEDITOR.replace('ckeditorCP');
         CKEDITOR.replace('ckeditorGS');
-    </script>
+    </script> -->

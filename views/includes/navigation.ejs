@@ -1,10 +1,11 @@
 <!-- <img src="images/XOSS.jpg" width="100%" height="140px"/> -->
 <!-- #4CBB17 | 00F04E; -->
-<nav class="navbar navbar-expand-lg navbar-dark flex-column flex-md-row" style="background: #0B3861;">
+<nav class="shadow navbar navbar-expand-lg navbar-dark" style="background: #0B3861; font-size: 18px;">
     <a href="/" class="navbar-brand">
-        <h3 style="font-family: 'Courier New', Courier, monospace; color: cornsilk;">
-            <kbd>bangla</kbd><b style="font-family: Ubuntu;" class="ml-1">Sketch</b>
-        </h3>
+
+        <kbd style="color: #58FF33;">banglaSketch</kbd>
+        <!-- <b style="font-family: Ubuntu;" class="ml-1">Sketch</b> -->
+
     </a>
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -12,73 +13,78 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    
+
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <span style="padding-right: 30px;"></span>
+            <span style="padding-right: 20px;"></span>
             <li class="nav-item">
                 <a href="/profileIndex" class="nav-link">
-                    <h5>People</h5>
+
+                    <i class="d-lg-none mr-2 fa fa-users"></i>
+                    People
                 </a> </li>
             <li class="nav-item">
-                <a href="/researchIndex" class="nav-link">
-                    <h5>Research</h5>
+                <a href="/researchIndex" class="nav-link font-weight-normal">
+
+                    <i class="d-lg-none mr-2 fa fa-cogs"></i>
+                    Research
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <h5>Publications</h5>
+
+                    <i class="d-lg-none mr-2 fa fa-puzzle-piece"></i>
+                    Publications
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <h5>News</h5>
+
+                    <i class="d-lg-none mr-2 fa fa-slack"></i>
+                    News
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link" >
-                    <h5>Resources</h5>
+                <a href="#" class="nav-link">
+                    <!-- <h5>Resources</h5> -->
+                    <i class="d-lg-none mr-2 fa fa-files-o"></i>
+                    Resources
                 </a>
             </li>
 
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <h5>API</h5>
+
+                    <i class="d-lg-none mr-2 fa fa-home"></i>
+                    API
                 </a>
             </li>
 
             <li class="nav-item">
-                <a href="/aboutus" class="nav-link" >
-                    <h5>About Us</h5>
+                <a href="/aboutus" class="nav-link">
+
+                    <i class="d-lg-none mr-2 fa fa-pied-piper-alt"></i>
+                    About Us
                 </a>
             </li>
             <li class="nav-item">
-                <a href="/adminPage" class="nav-link">
-                    <h5>Admin</h5>
+                <a href="/adminPage" class="nav-link <%= path === '/adminPage' ? 'active' : '' %>">
+
+                    <i class="d-lg-none mr-2 fa fa-steam"></i>
+                    Admin
                 </a>
             </li>
         </ul>
-        <!-- <form class="form-inline my-2 my-lg-0">
+
+        <form class="form-inline mt-0 ml-auto">
             <div class="input-group">
-                <input class="form-control-sm mr-sm-2" type="search" placeholder="Search" aria-describedby="spanFa"> -->
-
-                <!-- <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button> -->
-            <!-- </div>
-            <div class="input-group-append">
-                <span class="input-group-text fa fa-search btn btn-dark" id="spanFa"></span>
-            </div>
-
-        </form> -->
-
-        <form class="form-inline mb-1">
-            <div class="input-group">
-                <input type="search" class="form-control form-control-sm bg-light" style="color: indigo;" placeholder="Search">
+                <input type="search" class="form-control form-control-sm bg-light"
+                    style="color: rgb(6, 6, 7); width: 300px;" placeholder="Search">
                 <div class="input-group-append">
-                    <button class="input-group-text btn btn-outline-warning"><i class="fa fa-search"></i></button>
+                    <button class="input-group-text btn btn-outline-warning"><i class="fa fa-search"></i>
+                    </button>
                 </div>
-
             </div>
         </form>
     </div>
 </nav>
-<!-- <img src="images/XOSS2.jpg" width="100%" height="100%"/> -->
