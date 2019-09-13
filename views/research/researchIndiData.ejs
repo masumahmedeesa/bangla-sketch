@@ -1,44 +1,24 @@
 <%- include('../includes/head.ejs') %>
 <style>
-    /* .img-special{ */
-    /* position: absolute; */
-    /* right: 0px;
-        top: 0px;
-        height: 200px;
-        width: 100%; */
-    /* object-fit: cover; */
-    /* overflow: hidden;
-        overflow-x: hidden;
-        overflow-y: hidden; */
-    /* z-index: 0; */
-    /* border-radius: 4px 4px 0px 0px; */
-    /* } */
-
     .special-top {
         position: relative;
-        height: 200px;
-        margin: 0 auto;
+        height: 184px;
+        width: 100%;
     }
 
-    /* .img-special{
-        background-image: url("images/dataset-cover.png");
-        width: 250px; 
-        height: 100px;
-        z-index: 0;
-    }
-    .blended{
-        background-color: teal;
-        background-blend-mode: multiply;
-    } */
-    .special-top .content {
+    .content {
         position: absolute;
         top: 0px;
-        background: rgb(0, 0, 0);
         background: rgba(0, 0, 0, 0.5);
         color: #f1f1f1;
         width: 100%;
-        height: 190px;
-        padding: 20px;
+        height: 184px;
+    }
+
+    .img-beta {
+        width: 100%;
+        height: 184px;
+        padding: 0.1%;
     }
 
     .nav-data-item:hover {
@@ -53,131 +33,166 @@
     <%- include('../includes/navigation.ejs') %>
 
     <div class="container">
-        
+        <div class="mt-5"></div>
+
         <%- include('researchNav.ejs') %>
-        
-        <div class="border" style="background: #ffffff;">
+
+        <div class="shadow" style="background: #ffffff;">
             <div class="row">
-                <div class="col-md-2 mt-2 mb-2">
-                    <span style="padding-right: 65px;"></span>
-                    <a>Usability</a>
+                <div class="col-md-3">
+                    <div class="p-2 ml-4">
+                        <i class="ml-3 fa fa-suitcase"></i>
+                        <a>Usability</a>
+                    </div>
+
                 </div>
-                <div class="col-md-6 mt-2 mb-2">
-                    <a class="ml-5">
-                        License | Others (Specific in Description)
-                    </a>
+                <div class="col-md-5">
+                    <div class="p-2 ml-4">
+                        <i class="ml-3 fa fa-stumbleupon"></i>
+                        <a>
+                            License | Others (Specific in Description)
+                        </a>
+                    </div>
+
                 </div>
-                <div class="col-md-4 mt-2 mb-2">
-                    Tags, Linguistics, Language
+                <div class="col-md-4">
+                    <div class="p-2 ml-4">
+                        <i class="ml-3 fa fa-tags"></i>
+                        <a>
+                            Tags, Linguistics, Language
+                        </a>
+                    </div>
+
                 </div>
             </div>
         </div>
 
         <br>
-        <div class="border" style="background: #ffffff;">
+        <div class="shadow" style="background: #ffffff;">
 
-            <div class="mt-3 mb-2">
-                <span style="padding-left: 65px;"></span>
-                <a style="color: gray;">Description</a>
+            <div class="shadow p-2">
+                <div class="ml-4">
+                    <i class="ml-3 fa fa-th-large"></i>
+                    <a style="color: gray;">Description</a>
+                </div>
             </div>
-            <hr>
 
-            <div class="mt-3 mb-3">
 
+            <div class="mt-3">
                 <div class="row">
-                    <!-- <div class="col-md-1">
+                    <div class="col-md-12">
+                        <div class="ml-5 mr-5">
+                            <h1>What is in the Deep-NLP Learning?</h1>
+                            <p>
+                                Sheet_1.csv contains 80 user responses, in the response_text column, to a therapy
+                                chatbot.
+                                Bot said: 'Describe a time when you have acted as a resource for someone else'. User
+                                responded. If a response is 'not flagged', the user can continue talking to the bot. If
+                                it
+                                is 'flagged', the user is referred to help.
+                            </p>
 
-                    </div> -->
-                    <div class="col-md-12" style="padding-left: 80px;">
+                            <p>
+                                Sheet_2.csv contains 125 resumes, in the resume_text column. Resumes were queried from
+                                Indeed.com with keyword 'data scientist', location 'Vermont'. If a resume is 'not
+                                flagged',
+                                the applicant can submit a modified resume version at a later date. If it is 'flagged',
+                                the
+                                applicant is invited to interview.
+                            </p>
 
-                        <h1>What is in the Deep-NLP Learning?</h1>
-                        <p>
-                            Sheet_1.csv contains 80 user responses, in the response_text column, to a therapy chatbot.
-                            Bot said: 'Describe a time when you have acted as a resource for someone else'. User
-                            responded. If a response is 'not flagged', the user can continue talking to the bot. If it
-                            is 'flagged', the user is referred to help.
-                        </p>
+                            <pre class="shadow prettyprint" style="text-align: left;">
 
-                        <p>
-                            Sheet_2.csv contains 125 resumes, in the resume_text column. Resumes were queried from
-                            Indeed.com with keyword 'data scientist', location 'Vermont'. If a resume is 'not flagged',
-                            the applicant can submit a modified resume version at a later date. If it is 'flagged', the
-                            applicant is invited to interview.
-                        </p>
+                                                    #include.header
+                                                    using namespace std; 
+                                                    int main(){
+                                                      cout<<"Hello World/n"; 
+                                                    }
+                            </pre>
+                        </div>
 
-                        <pre class="prettyprint">
-
-                                            #include.header
-                                            using namespace std; 
-                                            int main(){
-                                              cout<<"Hello World/n"; 
-                                            }
-                                </pre>
                     </div>
                 </div>
-
-
             </div>
-            <hr>
-            <div class="mt-2 mb-3">
-                <span style="padding-left: 65px;"></span>
-                <a style="color: gray;">END</a>
-            </div>
+
         </div>
         <!-- description,end ses -->
 
         <!-- ata data, data sources -->
         <br>
-        <div class="border" style="background: #ffffff;">
-            <div style="padding: 12px;" class="border-bottom">
-                <span style="padding-left: 52px;"></span>
-                <a style="color: gray;">DATA(5MB)</a>
-                <br>
+        <div class="shadow" style="background: #ffffff;">
+
+            <div class="shadow p-2">
+                <div class="ml-4">
+                    <i class="ml-3 fa fa-files-o"></i>
+                    <a style="color: gray;">DATA(5MB)</a>
+                </div>
             </div>
 
             <div class="row">
-                <div class="col-md-5 border-right" style="padding-left: 80px;">
-                    <h6 class="mt-2">Data Sources</h6>
+                <div class="col-md-5 border-right">
+                    <div class="ml-3">
+                        <h6 class="shadow p-1 mt-2 text-success">Data Sources</h6>
 
-                    <table class="table table-borderless">
-                        <tr>
-                            <td>
+                        <table class="table table-borderless table-striped">
+                            <tr>
+                                <td>
                                     <a href="#" style="text-decoration: none;">
-                                            | Sheet_1.csv
+                                        | Sheet_1.csv
                                     </a>
-                            </td>
-                            <td>
-                                80
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
+                                </td>
+                                <td>
+                                    80
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
                                     <a href="#" style="text-decoration: none;">
-                                            | Sheet_2.csv
-                                        </a>
-                            </td>
-                            <td>
-                                120
-                            </td>
-                        </tr>
-                    </table>
+                                        | Sheet_2.csv
+                                    </a>
+                                </td>
+                                <td>
+                                    120
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" style="text-decoration: none;">
+                                        | Sheet_3.csv
+                                    </a>
+                                </td>
+                                <td>
+                                    720
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
                 </div>
 
-                <div class="col-md-3 border-right" style="padding-left: 80px;">
-                    <h6 class="mt-2">About these files</h6>
-                    <li style="list-style: none">Something?</li>
+                <div class="col-md-3 border-right">
+                    <div class="ml-3">
+                        <h6 class="text-success p-1 shadow mt-2">About these files</h6>
+                        <li style="list-style: none">| Something ELSE?</li>
+                        <li style="list-style: none">| COD?</li>
+                        <li style="list-style: none">| Game of Thrones?</li>
+                    </div>
                 </div>
-                <div class="col-md-4" style="padding-left: 80px;">
-                    <h6 class="mt-2"> Columons </h6>
-                    <li style="list-style: decimal;">
-                        response_id
-                    </li>
-                    <li style="list-style: decimal;">
-                        class
-                    </li>
-                    <li style="list-style: decimal;">
-                        response_text
-                    </li>
+
+                <div class="col-md-4">
+                    <div class="ml-3 mr-1">
+                        <h6 class="p-1 text-success shadow mt-2"> Columons </h6>
+                        <li style="list-style: decimal;">
+                            response_id
+                        </li>
+                        <li style="list-style: decimal;">
+                            class
+                        </li>
+                        <li style="list-style: decimal;">
+                            response_text
+                        </li>
+                    </div>
+
                 </div>
             </div>
         </div>
