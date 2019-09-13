@@ -2,19 +2,23 @@
 <style>
     .special-top {
         position: relative;
-        height: 200px;
-        margin: 0 auto;
+        height: 184px;
+        width: 100%;
     }
 
-    .special-top .content {
+    .content {
         position: absolute;
         top: 0px;
-        background: rgb(0, 0, 0);
         background: rgba(0, 0, 0, 0.5);
         color: #f1f1f1;
         width: 100%;
-        height: 190px;
-        padding: 20px;
+        height: 184px;
+    }
+
+    .img-beta {
+        width: 100%;
+        height: 184px;
+        padding: 0.1%;
     }
 
     .nav-data-item:hover {
@@ -31,13 +35,14 @@
 
         <%- include('researchNav.ejs') %>
 
-        <div class="border">
-            <div class="border-bottom" style="padding-left: 70px;">
-                <h6 class="mt-2" style="color: gray;">
+        <div class="shadow">
+            <div class="p-1 shadow">
+                <h6 class="ml-5 mt-1" style="color: gray;">
                     MetaData
                 </h6>
             </div>
-            <div style="padding-left: 60px;">
+
+            <div class="ml-4">
                 <table class="table table-borderless">
                     <tr rowspan="2">
                         <th>
@@ -69,7 +74,7 @@
                         </td>
                         <td>
                             <img src="images/Masum.png" style="width: 30px;height:30px; border-radius:50%;">
-                            <span><a href="#" class="ml-2" style="text-decoration: none;"> eeshadeeplearning </a></span>
+                            <span><a href="#" class="ml-1" style="text-decoration: none;"> eeshadeeplearning </a></span>
                         </td>
                     </tr>
 
