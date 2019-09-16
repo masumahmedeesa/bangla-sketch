@@ -1,0 +1,79 @@
+<%- include('../includes/head.ejs') %>
+<script type="text/javascript" src="ckeditor/ckeditor.js"> </script>
+</head>
+
+<body style="font-family: ubuntu;">
+    <%- include('../includes/navigation.ejs') %>
+
+    <div class="mt-5"></div>
+
+    <div class="container">
+        <div class="d-flex card shadow">
+            <div class="card-header shadow">
+                <kbd>English to Bangla</kbd>
+            </div>
+            <div class="card-body">
+                <div class="input-group">
+                    <label class="col-sm-2 col-form-label">
+                        <h6 style="text-align: center;"> Enter Something to Translate! </h6>
+                    </label>
+                    <div class="col-sm-10 mt-1">
+                        <textarea class="shadow col-sm-10" value="tranlation" type="text" id="ckeditor" name="tranlation"
+                            class="form-control" placeholder="Enter Something to Translate into Bangla!">
+                        </textarea>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label class="col-sm-2 col-form-label">
+                        <h6> </h6>
+                    </label>
+                    <div class="col-sm-10 mt-4">
+                        <button type="submit" class="btn btn-primary" onclick="getElement()">Translate</button>
+                    </div>
+                </div>
+
+                <div class="mt-3"></div>
+
+                <div class="p-3 shadow" style="text-align: center;">
+                    <p id="printedValue"></p>
+                </div>
+               
+
+            </div>
+
+        </div>
+    </div>
+    <br>
+    <%- include('../includes/end.ejs') %>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#ckeditor'))
+            .then(ckeditor => {
+                console.log(ckeditor);
+            })
+            .catch(error => {
+                console.error(error);
+            });
+
+            // document.getElementById('ckeditor').value = "Enter Something to Translate into Bangla!";
+        function getElement() {
+            var text = document.getElementsByTagName('input')[0].value;
+            // document.write(text.nodeValue);
+
+            document.getElementById('printedValue').innerHTML = "Something will be printed!";
+            // alert(text.toString());
+
+            // if(text){
+            //     document.getElementById('printedValue').innerHTML = text.trim();
+            //     document.getElementById('printedValue').innerHTML = "sdgjfk";
+            // }
+            // else{
+            //     document.getElementById('printedValue').innerHTML = "You haven't written yet.";
+            // }
+
+            // document.getElementById('printedValue').innerHTML = "You haven't written yet.";
+            
+        }
+
+    </script>

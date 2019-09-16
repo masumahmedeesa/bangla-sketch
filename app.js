@@ -11,6 +11,7 @@ const adminPagesRoute = require("./routes/adminRoutes");
 const profileRoute = require('./routes/profileRoutes');
 const researchRoute = require('./routes/researchRoutes.js');
 const errorControl = require("./controllers/errorController");
+const apiControl = require('./routes/apiRoutes');
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, "public")));
@@ -19,6 +20,7 @@ app.use(adminPagesRoute);
 app.use(homePagesRoute);
 app.use(profileRoute);
 app.use(researchRoute);
+app.use(apiControl);
 
 app.use(errorControl.getError);
 
