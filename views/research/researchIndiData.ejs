@@ -82,7 +82,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="ml-5 mr-5">
-                            <h1>What is in the Deep-NLP Learning?</h1>
+                            <h1>What is in the Bangla Modern Corpus?</h1>
                             <p>
                                 Sheet_1.csv contains 80 user responses, in the response_text column, to a therapy
                                 chatbot.
@@ -198,18 +198,8 @@
         </div>
         <br>
         <!-- aikhane data, data sources ses -->
-        <div class="d-flex">
-            <div>
-                <a href="/admin/editResearch/<%= research.id %>?edit=true" class="btn btn-success btn-sm">Edit</a>
-            </div>
-            <div class="ml-2">
-                <form action="/admin/deleteResearch" method="POST">
-                    <input type="hidden" value="<%= research.id %>" name="researchId" />
-                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                </form>
-            </div>
 
-        </div>
+        <!-- edit, delete will be shown here -->
 
 
 

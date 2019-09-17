@@ -42,7 +42,8 @@
                             <h3 class="ml-3">Add Research</h3>
                         </div>
                         <br>
-                        <form action="/admin/postResearch" method="POST">
+                        <!-- <form action="/admin/postResearch" method="POST"> -->
+                            <form action="#" method="POST">
                             <div class="input-group">
                                 <label class="col-sm-2 col-form-label">
                                     <h6> Title </h6>
@@ -116,71 +117,3 @@
     </div>
 
     <%- include('../includes/end.ejs') %>
-
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#ckeditor'))
-            .then(ckeditor => {
-                console.log(ckeditor);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-
-        ClassicEditor
-            .create(document.querySelector('#ckeditorE'))
-            .then(ckeditorE => {
-                console.log(ckeditorE);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#ckeditorR'))
-            .then(ckeditorR => {
-                console.log(ckeditorR);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#ckeditorA'))
-            .then(ckeditorA => {
-                console.log(ckeditorA);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#ckeditorJ'))
-            .then(ckeditorJ => {
-                console.log(ckeditorJ);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#ckeditorT'))
-            .then(ckeditorT => {
-                console.log(ckeditorT);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#ckeditorCP'))
-            .then(ckeditorCP => {
-                console.log(ckeditorCP);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor
-            .create(document.querySelector('#ckeditorGS'))
-            .then(ckeditorGS => {
-                console.log(ckeditorGS);
-            })
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
