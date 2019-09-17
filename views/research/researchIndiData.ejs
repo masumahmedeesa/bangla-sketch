@@ -198,9 +198,23 @@
         </div>
         <br>
         <!-- aikhane data, data sources ses -->
+        <div class="d-flex">
+            <div>
+                <a href="/admin/editResearch/<%= research.id %>?edit=true" class="btn btn-success btn-sm">Edit</a>
+            </div>
+            <div class="ml-2">
+                <form action="/admin/deleteResearch" method="POST">
+                    <input type="hidden" value="<%= research.id %>" name="researchId" />
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                </form>
+            </div>
+
+        </div>
 
 
 
+
+        <div class="mb-5"></div>
     </div>
 
     <%- include('../includes/end.ejs') %>

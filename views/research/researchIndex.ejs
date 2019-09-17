@@ -102,27 +102,37 @@
 
         </div>
 
-        <div class="p-1"></div>
+        <div class="mt-3"></div>
+
+        <% if(researchs.length > 0) { 
+            for(let research of researchs) { %>
 
         <div class="shadow datasets-row">
-            <div style="cursor: pointer;" onclick="window.location='/researchIndiData'"
-                class="d-flex">
+            <div style="cursor: pointer;" onclick="window.location='/researchIndiData/<%= research.id %>'" class="d-flex">
                 <div class="col-2">
                     <div class="p-2 ml-3">
-                        <img src="images/mzi.jpg" class="backGround">
+                        <img src="images/dataset7.jpeg" class="backGround">
                     </div>
 
                 </div>
 
                 <div class="col-8">
                     <div class="p-2 ml-5">
-                        <h5 style="font-weight: 600;"> Deep NLP-Learning </h5>
-                        <a href="#" style="text-decoration: none;"> eeshadeeplearning </a><br>
+                        <h5 style="font-weight: 600;">
+                            <%= research.title %>
+                        </h5>
+                        <a href="#" style="text-decoration: none;">
+                            <%= research.author %>
+                        </a><br>
                         <div class="d-inline-block" style="color: gray;">
                             <a>2 years</a>
-                            <a class="pl-3">243 KB</a>
+                            <a class="pl-3">
+                                <%= research.filesSize %> KB
+                            </a>
                             <a class="pl-3">8.2</a>
-                            <a class="pl-3">2 files (CSV)</a>
+                            <a class="pl-3">
+                                <%= research.filesCount %> files (CSV)
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -135,38 +145,41 @@
                 </div>
             </div>
         </div>
+        <div class="mt-3"></div>
+        <% } } else { %>
+            <h1> Not available </h1>
+        <% } %>
 
         <div class="shadow datasets-row mt-3">
-                <div style="cursor: pointer;" onclick="window.location='/researchIndiData'"
-                    class="d-flex">
-                    <div class="col-2">
-                        <div class="p-2 ml-3">
-                            <img src="images/Masum.png" class="backGround">
-                        </div>
-    
+            <div style="cursor: pointer;" onclick="window.location='/researchIndiData'" class="d-flex">
+                <div class="col-2">
+                    <div class="p-2 ml-3">
+                        <img src="images/deepnlp.png" class="backGround">
                     </div>
-    
-                    <div class="col-8">
-                        <div class="p-2 ml-5">
-                            <h5 style="font-weight: 600;"> Python Learning </h5>
-                            <a href="#" style="text-decoration: none;"> ribahaquelearning </a><br>
-                            <div class="d-inline-block" style="color: gray;">
-                                <a>5 years</a>
-                                <a class="pl-3">3243 KB</a>
-                                <a class="pl-3">9.2</a>
-                                <a class="pl-3">22 files (CSV)</a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="col-2">
-                        <div class="p-2 d-inline-block">
-                            <a href="#" style="text-decoration: none; font-size:25px;" class="fa fa-bell-o"></a>
-                            <h5> 1324 </h5>
+
+                </div>
+
+                <div class="col-8">
+                    <div class="p-2 ml-5">
+                        <h5 style="font-weight: 600;"> DEEP Learning </h5>
+                        <a href="#" style="text-decoration: none;"> ribahaquelearning </a><br>
+                        <div class="d-inline-block" style="color: gray;">
+                            <a>5 years</a>
+                            <a class="pl-3">3243 KB</a>
+                            <a class="pl-3">9.2</a>
+                            <a class="pl-3">22 files (CSV)</a>
                         </div>
                     </div>
                 </div>
+
+                <div class="col-2">
+                    <div class="p-2 d-inline-block">
+                        <a href="#" style="text-decoration: none; font-size:25px;" class="fa fa-bell-o"></a>
+                        <h5> 1324 </h5>
+                    </div>
+                </div>
             </div>
+        </div>
 
         <br>
 

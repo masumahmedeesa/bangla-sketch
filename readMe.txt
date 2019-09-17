@@ -67,5 +67,4 @@ You can begin now at least !
 8. npm install body-parser --save
 8. Npm install --save mysql2 | not important
 9. npm install --save sequelize | important
-npm install --save ckeditor
 
