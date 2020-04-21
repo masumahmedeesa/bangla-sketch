@@ -1,6 +1,13 @@
 # ABOUT
 This would be a starting project in which Bangla Machine Translation and Bangla DNLP or NLP related works, tasks are provided. Corpus or API are also provided. This is a long-termed project. It is affliated by Abdullah Al Mumin, Professor, Computer Science and Engineering, Shahjalal University of Science and Technology. Thank you
 
+### Heroku
+Heroku has bangla-sketch named APP which is just a dumy view of this. :)
+Website link 
+<pre>
+    https://bangla-sketch.herokuapp.com
+</pre>
+
 # What I did
 
 ```javascript
