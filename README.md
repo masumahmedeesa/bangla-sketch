@@ -1,15 +1,21 @@
-at first..
+# ABOUT
+This would be a starting project in which Bangla Machine Translation and Bangla DNLP or NLP related works, tasks are provided. Corpus or API are also provided. This is a long-termed project. It is affliated by Abdullah Al Mumin, Professor, Computer Science and Engineering, Shahjalal University of Science and Technology. Thank you
+
+# What I did
+
+```javascript
 1. npm init .. Give your Name | Credentials | Description at package.json
-{add "start" : "nodemon app.js" | npm start
-"start-server" : "node app.js" | npm run start-server
-}
+- add 
+    {   "start" : "nodemon app.js" | npm start
+        "start-server" : "node app.js" | npm run start-server
+    }
 
 2. npm install nodemon --save-dev
 
 3. npm install
 
-4. Add Dedug > Add Configuration for auto debugging mode : 
-launch.json...add these > 
+4. Add Dedug. Then, Add Configuration for auto debugging mode : 
+launch.json add these :
             "restart": true,
             "runtimeExecutable": "nodemon",
             "console": "integratedTerminal"
@@ -18,10 +24,12 @@ launch.json...add these >
 
 6. npm install --save ejs | jodi aro thake tahole aro
 
-7. apatoto aitukui
+7. This is all :)
 
-SECOND STEP : 
-AT INITIAL :
+```
+## SECOND STEP : 
+### AT INITIAL :
+```javascript
 app.js
 {
     const http = require("http");
@@ -63,13 +71,22 @@ controllers\homeController
     };
 }
 
+```
+
 You can begin now at least !
+```javascript
 8. npm install body-parser --save
-8. Npm install --save mysql2 | not important
-9. npm install --save sequelize | important
+9. Npm install --save mysql2 | not important
+10. npm install --save sequelize | important
+```
 
-DATABASE_URL = postgres://anhktqufnmlmnf:3b346e63613a27c784b59b55646c80c9039c4145310d8b024821fde7b016974a@ec2-54-228-207-163.eu-west-1.compute.amazonaws.com:5432/d5gpudn99k54i8
+DATABASE_URL = postgres://anhktqufnmlmnf:
+```
+3b346e63613a27c784b59b55646c80c9039c4145310d8b024821fde7b016974a@ec2-54-228-207-163.eu-west-1.compute.amazonaws.com:5432/d5gpudn99k54i8
+```
 
+### Some redundant Code, in case needed
+```javascript
 ....researchIndex
 
         <!-- <% if(researchs.length > 0) { 
@@ -133,3 +150,4 @@ DATABASE_URL = postgres://anhktqufnmlmnf:3b346e63613a27c784b59b55646c80c9039c414
                 </form>
             </div>
         </div> -->
+```

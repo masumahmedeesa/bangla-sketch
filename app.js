@@ -14,7 +14,7 @@ const researchRoute = require("./routes/researchRoutes.js");
 const errorControl = require("./controllers/errorController");
 const apiControl = require("./routes/apiRoutes");
 
-// const sequelize = require("./utility/database");
+const sequelize = require("./utility/database");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
@@ -35,17 +35,17 @@ app.use(errorControl.getError);
 
 // app.listen(3000);
 
-
-
-// sequelize
-//   // .sync({ force: true })
-//   .sync()
-//   .then(result => {
-//     app.listen(port);
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
-
 var port = process.env.PORT || 3000;
-app.listen(port);
+
+sequelize
+  // .sync({ force: true })
+  .sync()
+  .then(result => {
+    app.listen(port);
+  })
+  .catch(err => {
+    console.log(err);
+  });
+
+
+// app.listen(port);

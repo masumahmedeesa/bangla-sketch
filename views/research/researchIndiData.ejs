@@ -200,7 +200,17 @@
         <!-- aikhane data, data sources ses -->
 
         <!-- edit, delete will be shown here -->
-
+        <div class="d-flex">
+            <div>
+                <a href="/admin/editResearch/<%= research.id %>?edit=true" class="btn btn-success btn-sm">Edit</a>
+            </div>
+            <div class="ml-2">
+                <form action="/admin/deleteResearch" method="POST">
+                    <input type="hidden" value="<%= research.id %>" name="researchId" />
+                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
 
 
 
